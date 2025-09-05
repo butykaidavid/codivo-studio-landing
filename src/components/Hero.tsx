@@ -2,15 +2,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Palette, Zap } from "lucide-react";
 import codivoLogo from "@/assets/codivo-logo.png";
 import heroBg from "@/assets/hero-bg.png";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15" style={{
+      backgroundImage: `url(${heroBg})`
+    }} />
       <div className="absolute inset-0 bg-gradient-hero" />
       
       {/* Animated background elements */}
@@ -22,15 +19,11 @@ const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Logo */}
         <div className="mb-8 animate-float">
-          <img 
-            src={codivoLogo} 
-            alt="Codivo Studio Logo" 
-            className="mx-auto w-64 h-32 object-contain animate-pulse-glow"
-          />
+          
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent font-display">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent font-display py-[19px] my-0 mx-0 px-0">
           {"Codivo} Studio"}
         </h1>
         
@@ -68,8 +61,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
