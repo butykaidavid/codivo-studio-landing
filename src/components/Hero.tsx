@@ -8,10 +8,16 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      <div className="absolute inset-0 bg-gradient-glow" />
+      <div className="absolute inset-0 bg-gradient-hero" />
+      
+      {/* Animated background elements */}
+      <div className="absolute top-20 left-10 w-2 h-2 bg-accent/40 rounded-full animate-pulse" />
+      <div className="absolute top-40 right-20 w-1 h-1 bg-primary/60 rounded-full animate-ping" />
+      <div className="absolute bottom-32 left-32 w-1.5 h-1.5 bg-accent/50 rounded-full animate-bounce" />
+      <div className="absolute bottom-20 right-10 w-1 h-1 bg-primary/40 rounded-full animate-pulse" />
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Logo */}
@@ -24,29 +30,19 @@ const Hero = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-          Codivo Studio
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent font-display">
+          {"Codivo} Studio"}
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto font-light">
           Modern weboldal fejlesztés és digitális megoldások
         </p>
         
-        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-lg text-muted-foreground mb-16 max-w-2xl mx-auto font-light leading-relaxed">
           Egyedi weboldalak, responsive design és korszerű technológiák. 
           Professzionális megjelenés a digitális térben.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <Button variant="hero" size="lg" className="group">
-            Projektet kezdünk
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-          <Button variant="outline" size="lg">
-            Portfólió megtekintése
-          </Button>
-        </div>
 
         {/* Feature Icons */}
         <div className="grid grid-cols-3 gap-8 max-w-md mx-auto">
