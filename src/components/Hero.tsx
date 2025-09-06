@@ -28,8 +28,7 @@ const Hero = () => {
         </p>
         
         <p className="text-lg text-muted-foreground mb-16 max-w-2xl mx-auto font-light leading-relaxed">
-          One-page design, amely megfogják a látogatód, még mielőtt kattintana. 
-          Ötvözzük a kreativitást és a technológiát, hogy weboldalad ne csak szép, hanem eredményes is legyen.
+          One-page design, amely megfogják a látogatód, még mielőtt kattintana.
         </p>
 
 
