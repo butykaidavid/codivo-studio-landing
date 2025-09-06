@@ -5,7 +5,7 @@ import { Menu, X, Mail } from "lucide-react";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -13,7 +13,7 @@ const Navigation = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   useEffect(() => {
     if (isMobileMenuOpen) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
@@ -39,7 +39,6 @@ const Navigation = () => {
     }
   };
 
-  // EZ A SOR A JAVÍTÁS
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMobileMenuOpen ? "glass-effect backdrop-blur-xl border-b border-border/50" : "bg-transparent"}`}>
       <nav className="container mx-auto px-6 py-4">
@@ -47,7 +46,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <span className="text-xl font-bold font-display text-foreground">
-              {"Codivo} Studio"}
+              Codivo<span className="text-accent">{'}'}</span> Studio
             </span>
           </div>
 
