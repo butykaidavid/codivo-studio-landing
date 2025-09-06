@@ -45,7 +45,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold font-display text-foreground">
+            <span className="text-xl font-light font-display text-foreground">
               Codivo<span className="text-accent">{'}'}</span> Studio
             </span>
           </div>
@@ -103,3 +103,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
