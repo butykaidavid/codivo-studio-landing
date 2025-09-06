@@ -17,14 +17,6 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-1 h-1 bg-primary/40 rounded-full animate-pulse" />
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        {/* Logo */}
-        <div className="mb-8 animate-float">
-          <img 
-            src={codivoLogo} 
-            alt="Codivo Studio Logo" 
-            className="h-20 w-20 mx-auto object-contain drop-shadow-2xl"
-          />
-        </div>
 
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent font-display py-[19px] my-0 mx-0 px-0">
@@ -36,7 +28,7 @@ const Hero = () => {
         </p>
         
         <p className="text-lg text-muted-foreground mb-16 max-w-2xl mx-auto font-light leading-relaxed">
-          One-page és max. 5 aloldalas weboldalak, amelyek megfogják a látogatód, még mielőtt kattintana. 
+          One-page design, amely megfogják a látogatód, még mielőtt kattintana. 
           Ötvözzük a kreativitást és a technológiát, hogy weboldalad ne csak szép, hanem eredményes is legyen.
         </p>
 
