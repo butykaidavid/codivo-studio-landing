@@ -79,35 +79,50 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
 				},
 				'marquee': {
 					'0%': { transform: 'translateX(0%)' },
 					'100%': { transform: 'translateX(-100%)' }
-				}
+				},
+        'gradient-pan': {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+        'reveal-open-left': {
+          '0%': { transform: 'translateX(0.5ch) rotate(0deg)', opacity: '1' },
+          '50%': { transform: 'translateX(-6ch) rotate(-20deg)', opacity: '1' },
+          '80%, 100%': { transform: 'translateX(-12ch) rotate(-45deg)', opacity: '0' },
+        },
+        'reveal-open-right': {
+            '0%': { transform: 'translateX(-0.5ch)' },
+            '50%, 100%': { transform: 'translateX(0)' },
+        },
+        'reveal-text': {
+            '0%, 40%': { opacity: '0', transform: 'translateY(10px)' },
+            '70%, 100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'reveal-studio': {
+            '0%, 60%': { opacity: '0' },
+            '90%, 100%': { opacity: '1' },
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'marquee': 'marquee 30s linear infinite'
-			},
-      // EZT A RÉSZT ADTAM HOZZÁ
-			transitionTimingFunction: {
-        'gentle': 'cubic-bezier(0.4, 0, 0.2, 1)',
-      },
+				'marquee': 'marquee 30s linear infinite',
+        'gradient-pan': 'gradient-pan 8s ease-in-out infinite',
+        'reveal-open-left': 'reveal-open-left 2.5s ease-in-out forwards',
+        'reveal-open-right': 'reveal-open-right 2.5s ease-in-out forwards',
+        'reveal-text': 'reveal-text 2.5s ease-in-out forwards',
+        'reveal-studio': 'reveal-studio 2.5s ease-in-out forwards',
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
