@@ -12,18 +12,18 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'Milyen szolgáltatásokat nyújtanak?',
-      answer: 'Teljes körű webfejlesztési szolgáltatásokat nyújtunk: landing oldalakat, 4-5 oldalas weboldalakat, céges prezentációs oldalakat. Modern technológiákkal dolgozunk, mint React, TypeScript és SEO optimalizálás.'
+      answer: 'Teljes körű webfejlesztési szolgáltatásokat nyújtunk: one-page landing vagy maximum 5 aloldal. Modern technológiákkal dolgozunk, mint React, TypeScript és SEO optimalizálás.'
     },
     {
       question: 'Mennyi idő alatt készül el egy projekt?',
-      answer: 'Egy landing oldal 1-2 hét alatt elkészül, míg egy 4-5 oldalas weboldal 3-5 hetet vehet igénybe. A pontos időkeretet minden projekt esetében egyedileg határozzuk meg.'
+      answer: 'Egy one-page landing oldal 1-2 hét alatt elkészül, míg egy 5 aloldalas weboldal 3-5 hetet vehet igénybe. A pontos időkeretet minden projekt esetében egyedileg határozzuk meg.'
     },
     {
       question: 'Milyen árakra számíthatok?',
-      answer: 'Áraink 200.000 Ft-tól 500.000 Ft-ig terjednek a projekt komplexitásától függően. Egyéni megbeszélés alapján, ha több mindenre van szükség. Minden projektre egyedi árajánlatot készítünk.'
+      answer: 'Áraink 200.000 Ft-tól 500.000 Ft-ig terjednek a projekt komplexitásától függően. Egyéni megbeszélés alapján, ha több mindenre van szükség, nyitottak vagyunk. Minden projektre egyedi árajánlatot készítünk.'
     },
     {
-      question: 'Nyújtanak-e karbantartást is?',
+      question: 'Kapok garanciát és karbantartást?',
       answer: 'Igen, minden projektünkhöz teljes körű karbantartást és támogatást biztosítunk. Ez magában foglalja a frissítéseket, biztonsági javításokat és technikai támogatást.'
     }
   ];
