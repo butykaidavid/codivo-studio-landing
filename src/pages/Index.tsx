@@ -6,7 +6,6 @@ import Process from "@/components/Process";
 import TechStackMarquee from "@/components/TechStackMarquee";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import Contact from "@/components/Contact"
 
 const Index = () => {
   return (
@@ -26,10 +25,10 @@ const Index = () => {
       <div id="kerdeses">
         <FAQ />
       </div>
-      <div id="contact">
-        <Contact />
-      </div>
       <div id="kapcsolat">
+        <Footer />
+      </div>
+      <div id="lablec">
         <Footer />
       </div>
     </div>
