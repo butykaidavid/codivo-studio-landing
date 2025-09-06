@@ -45,25 +45,27 @@ const Navigation = () => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pointer-events-none">
+    <header className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
       <div className={`
         transition-all duration-300 ease-in-out pointer-events-auto
-        ${isScrolled && !isMobileMenuOpen ? 'mt-4' : 'mt-0'}
-        ${isMobileMenuOpen ? 'w-full container' : ''}
+        ${isScrolled && !isMobileMenuOpen ? 'pt-4' : 'pt-0'}
       `}>
         <nav
           className={`
             transition-all duration-300 ease-in-out mx-auto
             ${
               isMobileMenuOpen
-                ? 'w-full rounded-2xl glass-effect backdrop-blur-xl'
+                ? 'w-full rounded-2xl glass-effect backdrop-blur-xl container'
                 : isScrolled
                 ? 'max-w-fit rounded-full bg-secondary/90 backdrop-blur-xl border border-border/50 shadow-lg'
-                : 'container bg-transparent'
+                : 'w-full bg-transparent'
             }
           `}
         >
-          <div className="flex items-center justify-between px-4 py-2">
+          <div className={`
+            flex items-center justify-between px-4 py-2
+            ${isScrolled && !isMobileMenuOpen ? '' : 'container mx-auto'}
+          `}>
             {/* Logo */}
             <a href="#top" onClick={(e) => handleLinkClick(e, 'root')} className="flex items-center space-x-2 pl-2">
               <span className="text-xl font-light font-display">
