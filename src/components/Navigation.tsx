@@ -39,65 +39,93 @@ const Navigation = () => {
     }
   };
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+  }
+
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMobileMenuOpen ? "glass-effect backdrop-blur-xl border-b border-border/50" : "bg-transparent"}`}>
-      <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <span className="text-xl font-light font-display text-foreground">
-              Codivo<span className="text-accent">{'}'}</span> Studio
-            </span>
-          </div>
+    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pointer-events-none">
+      <div className={`
+        transition-all duration-300 ease-in-out pointer-events-auto
+        ${isScrolled && !isMobileMenuOpen ? 'mt-4' : 'mt-0'}
+        ${isMobileMenuOpen ? 'w-full container' : ''}
+      `}>
+        <nav
+          className={`
+            transition-all duration-300 ease-in-out mx-auto
+            ${
+              isMobileMenuOpen
+                ? 'w-full rounded-2xl glass-effect backdrop-blur-xl'
+                : isScrolled
+                ? 'max-w-fit rounded-full glass-effect backdrop-blur-xl border border-border/50 shadow-lg'
+                : 'container bg-transparent'
+            }
+          `}
+        >
+          <div className="flex items-center justify-between px-4 py-2">
+            {/* Logo */}
+            <a href="#top" onClick={(e) => handleLinkClick(e, 'root')} className="flex items-center space-x-2 pl-2">
+              <span className="text-xl font-light font-display">
+                Codivo<span className="text-accent">{'}'}</span> Studio
+              </span>
+            </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection("szolgaltatasok")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              Szolgáltatások
-            </button>
-            <button onClick={() => scrollToSection("eredmenyek")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              Eredmények
-            </button>
-            <button onClick={() => scrollToSection("folyamat")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              Folyamat
-            </button>
-            <button onClick={() => scrollToSection("kerdeses")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              GYIK
-            </button>
-            <Button onClick={() => scrollToSection("kapcsolat")} className="bg-primary hover:bg-primary/90">
-              <Mail className="h-4 w-4 mr-2" />
-              Kapcsolat
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 rounded-lg hover:bg-accent/10 transition-colors" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle mobile menu">
-            {isMobileMenuOpen ? <X className="h-6 w-6 text-foreground" /> : <Menu className="h-6 w-6 text-foreground" />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && <div className="md:hidden mt-4 pb-4 border-t border-border/50">
-            <div className="flex flex-col space-y-4 mt-4">
-              <button onClick={() => scrollToSection("szolgaltatasok")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
-                Szolgáltatások
-              </button>
-              <button onClick={() => scrollToSection("eredmenyek")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
-                Eredmények
-              </button>
-              <button onClick={() => scrollToSection("folyamat")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
-                Folyamat
-              </button>
-              <button onClick={() => scrollToSection("kerdeses")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
-                GYIK
-              </button>
-              <Button onClick={() => scrollToSection("kapcsolat")} className="w-full justify-center bg-primary hover:bg-primary/90 mt-4">
-                <Mail className="h-4 w-4 mr-2" />
-                Kapcsolat
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-1">
+               <Button variant="ghost" size="sm" asChild>
+                <a href="#szolgaltatasok" onClick={(e) => handleLinkClick(e, 'szolgaltatasok')}>Szolgáltatások</a>
+              </Button>
+              <Button variant="ghost" size="sm" asChild>
+                <a href="#eredmenyek" onClick={(e) => handleLinkClick(e, 'eredmenyek')}>Eredmények</a>
+              </Button>
+              <Button variant="ghost" size="sm" asChild>
+                <a href="#folyamat" onClick={(e) => handleLinkClick(e, 'folyamat')}>Folyamat</a>
+              </Button>
+              <Button variant="ghost" size="sm" asChild>
+                <a href="#kerdeses" onClick={(e) => handleLinkClick(e, 'kerdeses')}>GYIK</a>
+              </Button>
+              <Button size="sm" asChild>
+                <a href="#kapcsolat" onClick={(e) => handleLinkClick(e, 'kapcsolat')}>
+                  <Mail className="h-4 w-4 mr-2" />
+                  Kapcsolat
+                </a>
               </Button>
             </div>
-          </div>}
-      </nav>
+
+            {/* Mobile Menu Button */}
+            <button className="md:hidden p-2 -mr-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle mobile menu">
+              {isMobileMenuOpen ? <X className="h-6 w-6 text-foreground" /> : <Menu className="h-6 w-6 text-foreground" />}
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden px-4 pb-4 pt-2 border-t border-border/50">
+              <div className="flex flex-col items-start space-y-2">
+                 <Button variant="ghost" className="w-full justify-start" asChild>
+                    <a href="#szolgaltatasok" onClick={(e) => handleLinkClick(e, 'szolgaltatasok')}>Szolgáltatások</a>
+                </Button>
+                <Button variant="ghost" className="w-full justify-start" asChild>
+                    <a href="#eredmenyek" onClick={(e) => handleLinkClick(e, 'eredmenyek')}>Eredmények</a>
+                </Button>
+                <Button variant="ghost" className="w-full justify-start" asChild>
+                    <a href="#folyamat" onClick={(e) => handleLinkClick(e, 'folyamat')}>Folyamat</a>
+                </Button>
+                <Button variant="ghost" className="w-full justify-start" asChild>
+                    <a href="#kerdeses" onClick={(e) => handleLinkClick(e, 'kerdeses')}>GYIK</a>
+                </Button>
+                <Button className="w-full justify-center mt-2" asChild>
+                    <a href="#kapcsolat" onClick={(e) => handleLinkClick(e, 'kapcsolat')}>
+                        <Mail className="h-4 w-4 mr-2" />
+                        Kapcsolat
+                    </a>
+                </Button>
+              </div>
+            </div>
+          )}
+        </nav>
+      </div>
     </header>
   );
 };
