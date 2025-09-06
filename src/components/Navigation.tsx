@@ -20,6 +20,8 @@ const Navigation = () => {
       setIsMobileMenuOpen(false);
     }
   };
+    return (
+
 <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMobileMenuOpen ? "glass-effect backdrop-blur-xl border-b border-border/50" : "bg-transparent"}`}>      <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
