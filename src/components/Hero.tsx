@@ -18,13 +18,7 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Logo */}
-        <div className="mb-8 animate-float">
-          <img 
-            src={codivoLogo} 
-            alt="Codivo Studio Logo" 
-            className="h-20 w-20 mx-auto object-contain drop-shadow-2xl"
-          />
-        </div>
+        
 
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent font-display py-[19px] my-0 mx-0 px-0">
