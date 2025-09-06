@@ -1,8 +1,8 @@
 const TechStackMarquee = () => {
   const technologies = [
-    'React', 'TypeScript', 'Node.js', 'Next.js', 'Tailwind CSS',
-    'MongoDB', 'PostgreSQL', 'AWS', 'Docker', 'Git',
-    'Figma', 'Photoshop', 'WordPress', 'Shopify', 'Webflow'
+    'HTML5', 'CSS3 / SCSS', 'JavaScript', 'Next.js', 'Tailwind CSS',
+    'React & React Hooks', 'Node.js', 'REST API / GraphQL', 'FontAwesome', 'Git',
+    'TypeScript', 'Axios / Fetch API', 'Heroicons', 'Framer Motion'
   ];
 
   return (
