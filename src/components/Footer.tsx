@@ -8,7 +8,9 @@ const Footer = () => {
       <div className="container max-w-6xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-display font-semibold mb-2">Codivo{`}`} Studio</h3>
+            <h3 className="text-xl font-display font-light text-foreground mb-2">
+              Codivo<span className="text-accent">{'}'}</span> Studio
+            </h3>
             <p className="text-sm text-muted-foreground">Modern webfejlesztési megoldások</p>
           </div>
           
@@ -21,7 +23,7 @@ const Footer = () => {
         
         <div className="border-t border-border/30 mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Codivo{`}`} Studio. Minden jog fenntartva.
+            © {currentYear} <span className="font-display font-light text-foreground">Codivo<span className="text-accent">{'}'}</span> Studio</span>. Minden jog fenntartva.
           </p>
         </div>
       </div>
