@@ -135,44 +135,45 @@ All colors MUST be HSL.
     background: var(--gradient-hero);
   }
 
-/* Background Effects */
-.bg-noise {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3Ccircle cx='20' cy='20' r='1'/%3E%3Ccircle cx='35' cy='10' r='1'/%3E%3Ccircle cx='50' cy='25' r='1'/%3E%3Ccircle cx='15' cy='40' r='1'/%3E%3Ccircle cx='40' cy='50' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
+  /* Background Effects */
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3Ccircle cx='20' cy='20' r='1'/%3E%3Ccircle cx='35' cy='10' r='1'/%3E%3Ccircle cx='50' cy='25' r='1'/%3E%3Ccircle cx='15' cy='40' r='1'/%3E%3Ccircle cx='40' cy='50' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
 
-.border-gradient-border {
-  border-image: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.3), transparent) 1;
-}
+  .border-gradient-border {
+    border-image: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.3), transparent) 1;
+  }
 
-/* Scroll Reveal Animation Classes */
-.scroll-reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
+  /* Scroll Reveal Animation Classes */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.scroll-reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-/* Animations */
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
 
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
-}
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
 
-.animate-rotate-slow {
-  animation: rotate-slow 20s linear infinite;
-}
+  .animate-rotate-slow {
+    animation: rotate-slow 20s linear infinite;
+  }
 
-.glass-effect {
-  backdrop-filter: blur(20px);
-  background: hsl(var(--card) / 0.3);
-  border: 1px solid hsl(var(--border) / 0.3);
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    background: hsl(var(--card) / 0.3);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
 }
 
 /* Keyframes */
