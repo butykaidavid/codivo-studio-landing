@@ -19,7 +19,11 @@ const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Logo */}
         <div className="mb-8 animate-float">
-          
+          <img 
+            src={codivoLogo} 
+            alt="Codivo Studio Logo" 
+            className="h-20 w-20 mx-auto object-contain drop-shadow-2xl"
+          />
         </div>
 
         {/* Main Heading */}
@@ -32,7 +36,7 @@ const Hero = () => {
         </p>
         
         <p className="text-lg text-muted-foreground mb-16 max-w-2xl mx-auto font-light leading-relaxed">
-          Egyedi weboldalak, responsive design és korszerű technológiák. 
+          Elkészítjük a felhasználói élményt és vizuális identitást. 
           Professzionális megjelenés a digitális térben.
         </p>
 

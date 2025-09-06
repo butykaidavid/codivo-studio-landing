@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Metrics from "@/components/Metrics";
@@ -9,13 +10,24 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Navigation />
       <Hero />
-      <Services />
-      <Metrics />
-      <Process />
+      <div id="szolgaltatasok">
+        <Services />
+      </div>
+      <div id="eredmenyek">
+        <Metrics />
+      </div>
+      <div id="folyamat">
+        <Process />
+      </div>
       <TechStackMarquee />
-      <FAQ />
-      <Footer />
+      <div id="kerdeses">
+        <FAQ />
+      </div>
+      <div id="kapcsolat">
+        <Footer />
+      </div>
     </div>
   );
 };

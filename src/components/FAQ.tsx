@@ -11,20 +11,20 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'Mennyi idő alatt készül el egy weboldal?',
-      answer: 'A projekt összetettségétől függően 2-8 hét között változik. Egyszerű bemutatkozó oldalak 2-3 hét alatt, összetettebb webshopok vagy egyedi funkciókkal rendelkező oldalak 6-8 hét alatt készülnek el.'
+      question: 'Milyen szolgáltatásokat nyújtanak?',
+      answer: 'Teljes körű webfejlesztési szolgáltatásokat nyújtunk: landing oldalakat, 4-5 oldalas weboldalakat, céges prezentációs oldalakat. Modern technológiákkal dolgozunk, mint React, TypeScript és SEO optimalizálás.'
     },
     {
-      question: 'Milyen áron számíthatok?',
-      answer: 'Az árak a projekt igényei szerint alakulnak. Egyszerű bemutatkozó oldalak 200.000 Ft-tól, webshopok 500.000 Ft-tól indulnak. Minden projektre egyedi árajánlatot készítünk.'
+      question: 'Mennyi idő alatt készül el egy projekt?',
+      answer: 'Egy landing oldal 1-2 hét alatt elkészül, míg egy 4-5 oldalas weboldal 3-5 hetet vehet igénybe. A pontos időkeretet minden projekt esetében egyedileg határozzuk meg.'
     },
     {
-      question: 'Mobilbarát lesz az oldal?',
-      answer: 'Igen, minden általunk készített weboldal teljes mértékben reszponzív, azaz tökéletesen működik asztali gépeken, táblagépeken és mobilokon egyaránt.'
+      question: 'Milyen árakra számíthatok?',
+      answer: 'Áraink 200.000 Ft-tól 500.000 Ft-ig terjednek a projekt komplexitásától függően. Egyéni megbeszélés alapján, ha több mindenre van szükség. Minden projektre egyedi árajánlatot készítünk.'
     },
     {
-      question: 'Van garancia és támogatás?',
-      answer: 'Igen, minden projektre 1 év garanciát vállalunk. Emellett folyamatos technikai támogatást és karbantartási csomagokat is kínálunk.'
+      question: 'Nyújtanak-e karbantartást is?',
+      answer: 'Igen, minden projektünkhöz teljes körű karbantartást és támogatást biztosítunk. Ez magában foglalja a frissítéseket, biztonsági javításokat és technikai támogatást.'
     }
   ];
 

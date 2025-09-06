@@ -40,10 +40,10 @@ const Metrics = () => {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.2 });
 
   const metrics = [
-    { value: 150, suffix: '+', label: 'Sikeres projekt' },
-    { value: 98, suffix: '%', label: 'Ügyfél elégedettség' },
-    { value: 5, suffix: '+', label: 'Év tapasztalat' },
-    { value: 24, suffix: 'h', label: 'Támogatás' }
+    { value: 98, suffix: '/100', label: 'PageSpeed pontszám' },
+    { value: 95, suffix: '%', label: 'SEO optimalizálás' },
+    { value: 100, suffix: '%', label: 'Mobil kompatibilitás' },
+    { value: 1, suffix: 's', label: 'Betöltési sebesség' }
   ];
 
   return (
@@ -55,10 +55,10 @@ const Metrics = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           <h2 className="text-3xl md:text-4xl font-display font-light mb-4">
-            Számokban az eredmények
+            Teljesítmény és optimalizálás
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Több mint 5 év alatt építettük fel a tapasztalatunkat és ügyfeleink bizalmát
+            Minden weboldalunk gyors, SEO optimalizált és mobil-barát
           </p>
         </div>
 

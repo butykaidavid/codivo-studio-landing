@@ -171,8 +171,24 @@ All colors MUST be HSL.
 
   .glass-effect {
     backdrop-filter: blur(20px);
-    background: hsl(var(--card) / 0.3);
+    background: hsl(var(--card) / 0.8);
     border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .text-5xl {
+      font-size: 2.5rem;
+    }
+    
+    .text-7xl {
+      font-size: 3rem;
+    }
   }
 }
 
