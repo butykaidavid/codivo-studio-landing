@@ -38,10 +38,11 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
               Codivo
             </span>
             <span className="block animate-reveal-open-right text-accent">
-              {'} '} 
+              {'}'}
             </span>
+            {' '}
             <span className="block opacity-0 animate-reveal-studio">
-              {` Studio`}
+              {`Studio`}
             </span>
           </h2>
           <div className="w-64 h-1 bg-muted rounded-full overflow-hidden">
@@ -57,3 +58,4 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
 };
 
 export default PageLoader;
+
