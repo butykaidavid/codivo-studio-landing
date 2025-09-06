@@ -12,15 +12,15 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'Milyen szolgáltatásokat nyújtanak?',
-      answer: 'Teljes körű webfejlesztési szolgáltatásokat nyújtunk: erősen preferáljuk a one-page stílust vagy a maximum 3 aloldalt. Modern technológiákkal dolgozunk, mint React, TypeScript és SEO optimalizálás.'
+      answer: 'Teljes körű webfejlesztési szolgáltatásokat nyújtunk: erősen preferáljuk a one-page stílust vagy egyéni kérésre a maximum 3 aloldalt. Modern technológiákkal dolgozunk, mint React, TypeScript és SEO optimalizálás.'
     },
     {
       question: 'Miért és mi az a one-page stílus?',
-      answer: 'Egy rövid, letisztult weboldal gyorsan megragadja a látogatód figyelmét, és egyértelműen kommunikálja az üzenetedet. Nem kell hosszú menüket böngészni, minden fontos információ egy helyen elérhető. Ez nem csak a felhasználói élményt növeli, hanem a konverzió esélyét is, hiszen a látogatók gyorsan megtalálják, amit keresnek. Ráadásul a kisebb weboldalak gyorsabban elkészíthetők, könnyebben karbantarthatók, így időt és pénzt takarítasz meg, miközben profi benyomást kelt a digitális térben.'
+      answer: 'Csak nézz rá a mi weboldalunkra, de ezt már megtetted. Egy rövid, letisztult weboldal gyorsan megragadja a látogatód figyelmét, és egyértelműen kommunikálja az üzenetedet. Nem kell hosszú menüket böngészni, minden fontos információ egy helyen elérhető. Ez nem csak a felhasználói élményt növeli, hanem a konverzió esélyét is, hiszen a látogatók gyorsan megtalálják, amit keresnek. Ráadásul a kisebb weboldalak gyorsabban elkészíthetők, könnyebben karbantarthatók, így időt és pénzt takarítasz meg, miközben profi benyomást kelt a digitális térben.'
     },
     {
       question: 'Mennyi idő alatt készül el egy projekt?',
-      answer: 'Egy one-page landing oldal 1-2 hét alatt elkészül, míg egy 3 aloldalas weboldal 3-4 hetet vehet igénybe. A pontos időkeretet minden projekt esetében egyedileg határozzuk meg.'
+      answer: 'Egy one-page stílusú oldal 1-2 hét alatt elkészül, míg egy 3 aloldalas kiegészített változat 3-4 hetet vehet igénybe. A pontos időkeretet minden projekt esetében egyedileg határozzuk meg.'
     },
     {
       question: 'Milyen árakra számíthatok?',
