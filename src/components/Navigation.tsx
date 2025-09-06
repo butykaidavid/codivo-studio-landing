@@ -47,24 +47,24 @@ const Navigation = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
       <div className={`
-        transition-all duration-300 ease-in-out pointer-events-auto
+        transition-all duration-500 ease-in-out pointer-events-auto
         ${isScrolled && !isMobileMenuOpen ? 'pt-4' : 'pt-0'}
       `}>
         <nav
           className={`
-            transition-all duration-300 ease-in-out mx-auto
+            transition-all duration-500 ease-in-out mx-auto
             ${
               isMobileMenuOpen
-                ? 'w-full rounded-2xl glass-effect backdrop-blur-xl container'
+                ? 'w-full rounded-2xl bg-card/95 backdrop-blur-xl container'
                 : isScrolled
                 ? 'max-w-fit rounded-full bg-secondary/90 backdrop-blur-xl border border-border/50 shadow-lg'
-                : 'w-full bg-transparent'
+                : 'w-full bg-card/50 backdrop-blur-xl'
             }
           `}
         >
           <div className={`
             flex items-center justify-between px-4 py-2
-            ${isScrolled && !isMobileMenuOpen ? '' : 'container mx-auto'}
+            ${isScrolled && !isMobileMenuOpen ? 'gap-4' : 'container mx-auto'}
           `}>
             {/* Logo */}
             <a href="#top" onClick={(e) => handleLinkClick(e, 'root')} className="flex items-center space-x-2 pl-2">
@@ -74,7 +74,7 @@ const Navigation = () => {
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-1">
+            <div className="hidden md:flex items-center space-x-2">
                <Button variant="ghost" size="sm" asChild>
                 <a href="#szolgaltatasok" onClick={(e) => handleLinkClick(e, 'szolgaltatasok')}>Szolgáltatások</a>
               </Button>
