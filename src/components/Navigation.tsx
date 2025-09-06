@@ -47,12 +47,12 @@ const Navigation = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
       <div className={`
-        transition-all duration-700 ease-out pointer-events-auto
+        transition-all duration-700 ease-gentle pointer-events-auto
         ${isScrolled && !isMobileMenuOpen ? 'pt-2' : 'pt-0'}
       `}>
         <nav
           className={`
-            transition-all duration-700 ease-out mx-auto
+            transition-all duration-700 ease-gentle mx-auto
             ${
               isMobileMenuOpen
                 ? 'w-full rounded-2xl bg-card/95 backdrop-blur-xl container'
