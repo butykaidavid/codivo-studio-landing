@@ -34,7 +34,9 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            
+            <button onClick={() => scrollToSection("szolgaltatasok")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+              Szolgáltatások
+            </button>
             <button onClick={() => scrollToSection("folyamat")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
               Folyamat
             </button>
