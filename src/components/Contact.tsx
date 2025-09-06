@@ -60,9 +60,11 @@ const Contact = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="group">
-            Írj nekünk
-            <Mail className="ml-2 h-4 w-4 transition-transform group-hover:scale-110" />
+          <Button size="lg" className="group" asChild>
+            <a href="mailto:hello@codivo.hu">
+              Írj nekünk
+              <Mail className="ml-2 h-4 w-4 transition-transform group-hover:scale-110" />
+            </a>
           </Button>
         </div>
       </div>
