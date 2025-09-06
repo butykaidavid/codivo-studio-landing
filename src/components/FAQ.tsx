@@ -16,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: 'Miért és mi az a one-page stílus?',
-      answer: 'Csak nézz rá a mi weboldalunkra, de ezt már megtetted. Egy rövid, letisztult weboldal gyorsan megragadja a látogatód figyelmét, és egyértelműen kommunikálja az üzenetedet. Nem kell hosszú menüket böngészni, minden fontos információ egy helyen elérhető. Ez nem csak a felhasználói élményt növeli, hanem a konverzió esélyét is, hiszen a látogatók gyorsan megtalálják, amit keresnek. Ráadásul a kisebb weboldalak gyorsabban elkészíthetők, könnyebben karbantarthatók, így időt és pénzt takarítasz meg, miközben profi benyomást kelt a digitális térben.'
+      answer: 'Csak nézzen rá a mi weboldalunkra, de ezt már megtette. Egy rövid, letisztult weboldal gyorsan megragadja a látogatód figyelmét, és egyértelműen kommunikálja az üzenetedet. Nem kell hosszú menüket böngészni, minden fontos információ egy helyen elérhető. Ez nem csak a felhasználói élményt növeli, hanem a konverzió esélyét is, hiszen a látogatók gyorsan megtalálják, amit keresnek. Ráadásul a kisebb weboldalak gyorsabban elkészíthetők, könnyebben karbantarthatók, így időt és pénzt takarítasz meg, miközben profi benyomást kelt a digitális térben.'
     },
     {
       question: 'Mennyi idő alatt készül el egy projekt?',
