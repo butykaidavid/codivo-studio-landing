@@ -40,8 +40,7 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
             <span className="block animate-reveal-open-right text-accent">
               {'}'}
             </span>
-            {' '}
-            <span className="block opacity-0 animate-reveal-studio">
+            <span className="block opacity-0 animate-reveal-studio ml-2">
               {`Studio`}
             </span>
           </h2>
