@@ -25,6 +25,9 @@ const Index = () => {
       <div id="kerdeses">
         <FAQ />
       </div>
+      <div id="contact">
+        <Footer />
+      </div>
       <div id="kapcsolat">
         <Footer />
       </div>
