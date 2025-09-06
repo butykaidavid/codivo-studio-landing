@@ -36,11 +36,11 @@ const Navigation = () => {
             <button onClick={() => scrollToSection("szolgaltatasok")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
               Szolgáltatások
             </button>
-            <button onClick={() => scrollToSection("folyamat")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              Folyamat
-            </button>
             <button onClick={() => scrollToSection("eredmenyek")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
               Eredmények
+            </button>
+            <button onClick={() => scrollToSection("folyamat")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+              Folyamat
             </button>
             <button onClick={() => scrollToSection("kerdeses")} className="text-muted-foreground hover:text-foreground transition-colors font-medium">
               GYIK
@@ -63,11 +63,11 @@ const Navigation = () => {
               <button onClick={() => scrollToSection("szolgaltatasok")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
                 Szolgáltatások
               </button>
-              <button onClick={() => scrollToSection("folyamat")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
-                Folyamat
-              </button>
               <button onClick={() => scrollToSection("eredmenyek")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
                 Eredmények
+              </button>
+              <button onClick={() => scrollToSection("folyamat")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
+                Folyamat
               </button>
               <button onClick={() => scrollToSection("kerdeses")} className="text-left text-muted-foreground hover:text-foreground transition-colors font-medium py-2">
                 GYIK
