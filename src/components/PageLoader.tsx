@@ -23,7 +23,7 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
   }, [onLoadComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-background flex items-center justify-center">
+    <div className="fixed inset-0 z-60 bg-background flex items-center justify-center">
       <div className="text-center space-y-8">
         <div className="relative">
           <div className="w-24 h-24 mx-auto bg-gradient-primary rounded-full animate-pulse-glow" />
