@@ -12,7 +12,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'Milyen szolgáltatásokat nyújtanak?',
-      answer: 'Teljes körű webfejlesztési szolgáltatásokat nyújtunk: erősen preferáljuk a one-page stílust vagy egyéni kérésre a maximum 3 aloldalt. Modern technológiákkal dolgozunk, mint React, TypeScript és SEO optimalizálás.'
+      answer: 'Teljes körű webfejlesztési szolgáltatásokat nyújtunk, ezen belül elsősorban a modern, one-page stílusú weboldalakat részesítjük előnyben, de egyedi kérésre maximum 3 aloldalas oldalakat is készítünk.'
     },
     {
       question: 'Miért és mi az a one-page stílus?',

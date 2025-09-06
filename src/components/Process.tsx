@@ -13,7 +13,7 @@ const Process = () => {
     {
       icon: Palette,
       title: 'Tervezés',
-      description: 'Készítjük a felhasználói élményt és vizuális identitást.'
+      description: 'Kialakítjuk a felhasználói élményt és vizuális identitást.'
     },
     {
       icon: Code,

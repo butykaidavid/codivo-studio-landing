@@ -9,7 +9,7 @@ const TechStackMarquee = () => {
     <section className="py-16 bg-background border-t border-border/50 overflow-hidden">
       <div className="container max-w-6xl mx-auto px-6 mb-8">
         <h2 className="text-2xl md:text-3xl font-display font-light text-center text-muted-foreground">
-          Technológiák amikkel dolgozunk
+          Technológiák, amikkel dolgozunk
         </h2>
       </div>
       

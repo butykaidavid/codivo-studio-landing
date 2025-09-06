@@ -22,7 +22,7 @@ const NotFound = () => {
           </h1>
           <h2 className="text-2xl font-semibold mb-4">Oldal nem található</h2>
           <p className="text-muted-foreground mb-8">
-            Sajnáljuk, de a keresett oldal nem létezik vagy áthelyezték.
+            Sajnáljuk, de a keresett oldal nem létezik, vagy már nem elérhető.
           </p>
         </div>
         
