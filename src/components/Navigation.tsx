@@ -58,7 +58,7 @@ const Navigation = () => {
               isMobileMenuOpen
                 ? 'w-full rounded-2xl glass-effect backdrop-blur-xl'
                 : isScrolled
-                ? 'max-w-fit rounded-full glass-effect backdrop-blur-xl border border-border/50 shadow-lg'
+                ? 'max-w-fit rounded-full bg-secondary/90 backdrop-blur-xl border border-border/50 shadow-lg'
                 : 'container bg-transparent'
             }
           `}
