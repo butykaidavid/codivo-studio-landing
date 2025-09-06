@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -46,7 +46,7 @@ const Navigation = () => {
               GYIK
             </button>
             <Button onClick={() => scrollToSection("kapcsolat")} className="bg-primary hover:bg-primary/90">
-              <Phone className="h-4 w-4 mr-2" />
+              <Mail className="h-4 w-4 mr-2" />
               Kapcsolat
             </Button>
           </div>
@@ -73,7 +73,7 @@ const Navigation = () => {
                 GYIK
               </button>
               <Button onClick={() => scrollToSection("kapcsolat")} className="w-full justify-center bg-primary hover:bg-primary/90 mt-4">
-                <Phone className="h-4 w-4 mr-2" />
+                <Mail className="h-4 w-4 mr-2" />
                 Kapcsolat
               </Button>
             </div>
