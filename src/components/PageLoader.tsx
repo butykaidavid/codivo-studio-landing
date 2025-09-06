@@ -38,7 +38,7 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
               Codivo
             </span>
             <span className="block animate-reveal-open-right text-accent">
-              {'}'} 
+              {'} '} 
             </span>
             <span className="block opacity-0 animate-reveal-studio">
               {` Studio`}
